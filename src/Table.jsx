@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const Table = () => {
   const [coloredRow, setcoloredRow] = useState(null);
+
   const [data, setData] = useState([
     {
       id: 1,
@@ -318,8 +319,308 @@ const Table = () => {
       },
       rank: 22,
     },
+    {
+      id: 22,
+      college: {
+        name: "IIT BHU",
+        state: "Uttar Pradesh",
+        capital: "Lucknow",
+      },
+      courseFee: "2,20,000",
+      Placement: ["19,00,000", "1,75,00,000"],
+      reviewsData: {
+        reviews: 8.4,
+        basedon: 275,
+      },
+      rank: 8,
+    },
+    {
+      id: 23,
+      college: {
+        name: "NIT Warangal",
+        state: "Telangana",
+        capital: "Hyderabad",
+      },
+      courseFee: "2,00,000",
+      Placement: ["17,00,000", "1,60,00,000"],
+      reviewsData: {
+        reviews: 8.3,
+        basedon: 250,
+      },
+      rank: 9,
+    },
+    {
+      id: 24,
+      college: {
+        name: "Jadavpur University",
+        state: "West Bengal",
+        capital: "Kolkata",
+      },
+      courseFee: "1,50,000",
+      Placement: ["15,00,000", "1,50,00,000"],
+      reviewsData: {
+        reviews: 8.2,
+        basedon: 235,
+      },
+      rank: 23,
+    },
+    {
+      id: 25,
+      college: {
+        name: "Delhi Technological University",
+        state: "Delhi",
+        capital: "New Delhi",
+      },
+      courseFee: "1,90,000",
+      Placement: ["16,50,000", "1,70,00,000"],
+      reviewsData: {
+        reviews: 8.5,
+        basedon: 260,
+      },
+      rank: 24,
+    },
+    {
+      id: 26,
+      college: {
+        name: "Aligarh Muslim University",
+        state: "Uttar Pradesh",
+        capital: "Lucknow",
+      },
+      courseFee: "1,60,000",
+      Placement: ["12,00,000", "1,30,00,000"],
+      reviewsData: {
+        reviews: 7.8,
+        basedon: 215,
+      },
+      rank: 25,
+    },
+    {
+      id: 27,
+      college: {
+        name: "Jamia Millia Islamia",
+        state: "Delhi",
+        capital: "New Delhi",
+      },
+      courseFee: "1,50,000",
+      Placement: ["13,50,000", "1,40,00,000"],
+      reviewsData: {
+        reviews: 8.0,
+        basedon: 225,
+      },
+      rank: 26,
+    },
+    {
+      id: 28,
+      college: {
+        name: "IIT Indore",
+        state: "Madhya Pradesh",
+        capital: "Bhopal",
+      },
+      courseFee: "2,20,000",
+      Placement: ["18,50,000", "1,75,00,000"],
+      reviewsData: {
+        reviews: 8.1,
+        basedon: 240,
+      },
+      rank: 27,
+    },
+    {
+      id: 29,
+      college: {
+        name: "IIT Ropar",
+        state: "Punjab",
+        capital: "Chandigarh",
+      },
+      courseFee: "2,15,000",
+      Placement: ["17,00,000", "1,65,00,000"],
+      reviewsData: {
+        reviews: 8.3,
+        basedon: 230,
+      },
+      rank: 28,
+    },
+    {
+      id: 30,
+      college: {
+        name: "IIT Jodhpur",
+        state: "Rajasthan",
+        capital: "Jaipur",
+      },
+      courseFee: "2,10,000",
+      Placement: ["16,50,000", "1,60,00,000"],
+      reviewsData: {
+        reviews: 8.2,
+        basedon: 220,
+      },
+      rank: 29,
+    },
+    {
+      id: 31,
+      college: {
+        name: "IIT Mandi",
+        state: "Himachal Pradesh",
+        capital: "Shimla",
+      },
+      courseFee: "2,25,000",
+      Placement: ["17,50,000", "1,70,00,000"],
+      reviewsData: {
+        reviews: 8.0,
+        basedon: 215,
+      },
+      rank: 30,
+    },
+    {
+      id: 32,
+      college: {
+        name: "NIT Rourkela",
+        state: "Odisha",
+        capital: "Bhubaneswar",
+      },
+      courseFee: "1,90,000",
+      Placement: ["16,00,000", "1,55,00,000"],
+      reviewsData: {
+        reviews: 8.1,
+        basedon: 225,
+      },
+      rank: 31,
+    },
+    {
+      id: 33,
+      college: {
+        name: "NIT Calicut",
+        state: "Kerala",
+        capital: "Thiruvananthapuram",
+      },
+      courseFee: "1,85,000",
+      Placement: ["15,50,000", "1,50,00,000"],
+      reviewsData: {
+        reviews: 8.0,
+        basedon: 230,
+      },
+      rank: 32,
+    },
+    {
+      id: 34,
+      college: {
+        name: "NIT Kurukshetra",
+        state: "Haryana",
+        capital: "Chandigarh",
+      },
+      courseFee: "1,80,000",
+      Placement: ["14,50,000", "1,45,00,000"],
+      reviewsData: {
+        reviews: 7.9,
+        basedon: 220,
+      },
+      rank: 33,
+    },
+    {
+      id: 35,
+      college: {
+        name: "IIT Patna",
+        state: "Bihar",
+        capital: "Patna",
+      },
+      courseFee: "2,20,000",
+      Placement: ["18,00,000", "1,70,00,000"],
+      reviewsData: {
+        reviews: 8.2,
+        basedon: 235,
+      },
+      rank: 34,
+    },
+    {
+      id: 36,
+      college: {
+        name: "NIT Silchar",
+        state: "Assam",
+        capital: "Dispur",
+      },
+      courseFee: "1,75,000",
+      Placement: ["14,00,000", "1,40,00,000"],
+      reviewsData: {
+        reviews: 7.8,
+        basedon: 220,
+      },
+      rank: 35,
+    },
+    {
+      id: 37,
+      college: {
+        name: "IIT Gandhinagar",
+        state: "Gujarat",
+        capital: "Gandhinagar",
+      },
+      courseFee: "2,25,000",
+      Placement: ["19,00,000", "1,75,00,000"],
+      reviewsData: {
+        reviews: 8.5,
+        basedon: 245,
+      },
+      rank: 36,
+    },
+    {
+      id: 38,
+      college: {
+        name: "NIT Durgapur",
+        state: "West Bengal",
+        capital: "Kolkata",
+      },
+      courseFee: "1,70,000",
+      Placement: ["14,50,000", "1,45,00,000"],
+      reviewsData: {
+        reviews: 7.7,
+        basedon: 225,
+      },
+      rank: 37,
+    },
+    {
+      id: 39,
+      college: {
+        name: "IIT Bhilai",
+        state: "Chhattisgarh",
+        capital: "Raipur",
+      },
+      courseFee: "2,15,000",
+      Placement: ["16,50,000", "1,60,00,000"],
+      reviewsData: {
+        reviews: 8.0,
+        basedon: 210,
+      },
+      rank: 38,
+    },
+    {
+      id: 40,
+      college: {
+        name: "IIT Palakkad",
+        state: "Kerala",
+        capital: "Thiruvananthapuram",
+      },
+      courseFee: "2,20,000",
+      Placement: ["16,00,000", "1,55,00,000"],
+      reviewsData: {
+        reviews: 8.1,
+        basedon: 220,
+      },
+      rank: 39,
+    },
+    {
+      id: 41,
+      college: {
+        name: "IIIT Hyderabad",
+        state: "Telangana",
+        capital: "Hyderabad",
+      },
+      courseFee: "2,50,000",
+      Placement: ["20,00,000", "2,00,00,000"],
+      reviewsData: {
+        reviews: 9.0,
+        basedon: 270,
+      },
+      rank: 40,
+    },
   ]);
-
+  
   const [visibleItems, setVisibleItems] = useState(5);
 
   const loadMoreItems = () => {
